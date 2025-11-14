@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0f0f, #1b1b1b, #242424);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 850px;
+    color: white;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.title span {
+    color: #ff006a;
+}
+
+.subtitle {
+    margin-top: 5px;
+    font-size: 1rem;
+    opacity: .7;
+}
+
+.contact-wrapper {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 10px;
+}
+
+/* CARD STYLE */
+.card {
+    padding: 40px 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+/* Hover efek premium */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/*warna icon tiap platform*/
+.whatsapp i {
+    color: #25D366;
+}
+
+.instagram i {
+    color: #ff006a;
+}
+
+.email i {
+    color: #3399ff;
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: .9rem;
+    opacity: .7;
+}
